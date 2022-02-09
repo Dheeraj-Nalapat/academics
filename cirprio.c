@@ -144,14 +144,12 @@ void priority_queue() {
 }
 
 void main() {
-    pfront = prear = 0;
+    pfront = prear = -1;
     cfront = crear = 0;
-    printf("Enter size of the Circular Queue: ");
-    scanf("%d", &cn);
-    printf("Enter size of the Priority Queue: ");
+    printf("Enter size of the Queue: ");
     scanf("%d", &pn);
+    cn = pn+1;
     int choice=0;
-    // A menu with options Circular Queue, Priority Queue and Exit
     do {
         printf("\n\n\n\t\t\tMENU");
         printf("\n1. Circular Queue\n2. Priority Queue\n3. Exit\n");
